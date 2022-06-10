@@ -1,0 +1,44 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  <title>TeLaSe</title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-9">
+<META HTTP-EQUIV="Content-language" CONTENT="tr">
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Video Player</title>
+      <!-- Favicon Icon -->
+      <link rel="icon" type="image/ico" href="img/favicon.ico">
+  <link rel='stylesheet' href="./css/style.css">
+<script type="text/javascript" charset="UTF-8"></script></head>
+  <body>
+        <div align="center"><h1>Video Player</h1></div>
+        <select id="videoselection" onchange="myFunction()">
+        <option value="">Dropdown to select.</option>
+                <option value="http://stream.pizztv.com:8000/live/Userfree1/AREAFREE/8.m3u8">beIN SPORTS PREMIUM 1</option> 
+                <option value="http://217.74.16.155:8082/local//ar-s/B-S-pre-2-stop/index.m3u8">beIN SPORTS PREMIUM 2</option>
+                <option value="http://195.154.242.24:8001/play/a015/index.m3u8">beIN SPORTS PREMIUM 3</option>
+                <option value="http://217.74.16.155:8082/local//ar-s/bein-1-stop/index.m3u8">beIN SPORTS 1</option>
+                <option value="http://217.74.16.155:8082/local//ar-s/bein-2-stop/index.m3u8">beIN SPORTS 2</option>
+                <option value="http://217.74.16.155:8082/local//ar-s/bein-3-stop/index.m3u8">beIN SPORTS 3</option>
+                <option value="http://217.74.16.155:8082/local//ar-s/bein-4-stop/index.m3u8">beIN SPORTS 4</option>
+                <option value="http://217.74.16.155:8082/local//ar-s/bein-5-stop/index.m3u8">beIN SPORTS 5</option>
+                <option value="http://217.74.16.155:8082/local//ar-s/bein-6-stop/index.m3u8">beIN SPORTS 6</option>
+                <option value="http://217.74.16.155:8082/local//ar-s/bein-7-stop/index.m3u8">beIN SPORTS 7</option>
+                <option value="http://217.74.16.155:8082/local//ar-s/bein-afc-1/index.m3u8">beIN AFC 1</option>
+                <option value="http://217.74.16.155:8082/local//ar-s/bein-afc-2/index.m3u8">beIN AFC 2</option>
+                <option value="http://217.74.16.155:8082/local//ar-s/bein-afc-3/index.m3u8">beIN AFC 3</option>
+                </select>
+<p> </p>
+Enter a video link:
+<div style="text-align: justify;"><input name="textbox" id="textbox"
+type="text"> <input name="buttonExecute" onclick="myFunction1()"
+value="Play" type="button">&nbsp;
+        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+        <div align="center"><video id="video" width="853" height="480" controls autoplay"></video></div>
+	    <script src="./js/player.js"></script>
+   </body>
+</html>
+</body>
+</html>
